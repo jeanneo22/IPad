@@ -18,7 +18,7 @@ public class Usuario {
 
     public Usuario(String nome, int senha) {
         this.nome = nome;
-        this.senha = senha;
+        setSenha(senha);
     }
 
     public Usuario() {
@@ -36,6 +36,7 @@ public class Usuario {
     }
 
     public void setSenha(int senha) {
+        // Uma senha de 6 digitos
         this.senha = (senha%100000>= 1)?senha:000000;
     }
 
