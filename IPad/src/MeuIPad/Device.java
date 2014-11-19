@@ -80,4 +80,9 @@ public class Device {
         if(isLigado()) System.out.println("Esta ligado");
         else System.out.println("Desligado");
     }
+    public static void isIPad(Device aparelho) {
+        if(aparelho instanceof IPad)
+            System.out.println("E um IPad");
+        else System.out.println("Nao e um IPad");
+    }
 }
